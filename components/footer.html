@@ -1,0 +1,120 @@
+<!-- ============================================================
+  HUDSON AGILE ENTERPRISES — Shared Footer Component
+  components/footer.html
+============================================================ -->
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+
+    <!-- Footer Grid -->
+    <div class="footer-grid">
+
+      <!-- Brand Column -->
+      <div>
+        <a href="index.html" class="navbar-brand-link mb-3 d-inline-flex" aria-label="Hudson Agile Enterprises home">
+          <img
+            src="assets/images/branding/logo.png"
+            alt="Hudson Agile Enterprises logo"
+            style="height:42px;width:auto;"
+          />
+          <div class="navbar-brand-text ms-2">
+            <span class="navbar-brand-name" style="color:var(--color-white);">HUDSON AGILE</span>
+            <span class="navbar-brand-tagline">Enterprises</span>
+          </div>
+        </a>
+
+        <p class="footer-brand-desc">
+          Engineering digital solutions and empowering future innovators through
+          technology-driven learning and campus collaboration.
+        </p>
+
+        <!-- Social Links — populated by components.js from site-config.js -->
+        <div id="footer-social" class="footer-social-links">
+          <!-- Dynamically populated from SITE_CONFIG.social -->
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="footer-col-title">Quick Links</h3>
+        <nav class="footer-links" aria-label="Footer quick links">
+          <a href="index.html"           class="footer-link">Home</a>
+          <a href="about.html"           class="footer-link">About Us</a>
+          <a href="services.html"        class="footer-link">Services</a>
+          <a href="projects.html"        class="footer-link">Projects</a>
+          <a href="careers.html"         class="footer-link">Careers</a>
+          <a href="contact.html"         class="footer-link">Contact</a>
+        </nav>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h3 class="footer-col-title">Software Services</h3>
+        <nav class="footer-links" aria-label="Software services links">
+          <a href="services.html#website-development"  class="footer-link">Website Development</a>
+          <a href="services.html#web-applications"     class="footer-link">Web Applications</a>
+          <a href="services.html#api-integration"      class="footer-link">API Integration</a>
+          <a href="services.html#database-solutions"   class="footer-link">Database Solutions</a>
+          <a href="services.html#software-maintenance" class="footer-link">Software Maintenance</a>
+          <a href="services.html#technical-consulting" class="footer-link">Technical Consulting</a>
+        </nav>
+      </div>
+
+      <!-- Campus + Contact -->
+      <div>
+        <h3 class="footer-col-title">Campus Programs</h3>
+        <nav class="footer-links" aria-label="Campus programs links">
+          <a href="campus-programs.html#workshops"     class="footer-link">Programming Workshops</a>
+          <a href="campus-programs.html#frontend"      class="footer-link">Frontend Development</a>
+          <a href="campus-programs.html#backend"       class="footer-link">Backend Development</a>
+          <a href="campus-programs.html#projects"      class="footer-link">Final-Year Projects</a>
+          <a href="campus-programs.html#seminars"      class="footer-link">Technical Seminars</a>
+          <a href="campus-programs.html#internship"    class="footer-link">Internship Programs</a>
+        </nav>
+
+        <div class="mt-4">
+          <h3 class="footer-col-title">Contact</h3>
+          <div data-contact-item>
+            <div class="footer-contact-item">
+              <i class="bi bi-envelope"></i>
+              <a href="mailto:contact@hudsonagile.com" data-email class="footer-link">
+                contact@hudsonagile.com
+              </a>
+            </div>
+          </div>
+          <div data-contact-item>
+            <div class="footer-contact-item" id="footer-phone-item">
+              <i class="bi bi-telephone"></i>
+              <a href="#" data-phone class="footer-link">
+                Available upon enquiry
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.footer-grid -->
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p class="footer-bottom-text">
+        &copy; <span data-year></span> Hudson Agile Enterprises. All rights reserved.
+      </p>
+      <div class="footer-bottom-links">
+        <a href="privacy-policy.html" class="footer-bottom-link">Privacy Policy</a>
+        <a href="sitemap.xml"         class="footer-bottom-link">Sitemap</a>
+      </div>
+    </div>
+
+  </div><!-- /.container -->
+</footer>
+
+<!-- Back to Top Button -->
+<button
+  id="back-to-top"
+  class="back-to-top"
+  aria-label="Back to top of page"
+  title="Back to top"
+>
+  <i class="bi bi-chevron-up"></i>
+</button>

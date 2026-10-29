@@ -1,0 +1,374 @@
+/* ============================================================
+   HUDSON AGILE ENTERPRISES — Responsive Styles
+   responsive.css
+   ============================================================ */
+
+/* ═══════════════════════════════════
+   BREAKPOINTS:
+   xs: < 480px
+   sm: 480px
+   md: 768px
+   lg: 992px
+   xl: 1200px
+   2xl: 1400px
+═══════════════════════════════════ */
+
+/* ── Large Desktop (1400px+) ── */
+@media (min-width: 1400px) {
+  .hero-section {
+    min-height: 90vh;
+  }
+}
+
+/* ── Desktop (1200px - 1399px) ── */
+@media (max-width: 1199px) {
+  .footer-grid {
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: var(--space-10);
+  }
+
+  .footer-grid > *:first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ── Tablet + Laptop (992px - 1199px) ── */
+@media (max-width: 1199px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .core-values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .campus-programs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .careers-opportunities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .working-process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ── Tablet (768px - 991px) ── */
+@media (max-width: 991px) {
+  :root {
+    --section-py: 3.5rem;
+    --navbar-height: 64px;
+  }
+
+  /* Navigation: hide desktop nav, show toggle */
+  .navbar-nav-links {
+    display: none;
+  }
+
+  .navbar-actions .btn-discuss {
+    display: none;
+  }
+
+  .navbar-toggler-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Hero */
+  .hero-section {
+    padding: var(--space-16) 0;
+    min-height: auto;
+    text-align: center;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-stats-strip {
+    justify-content: center;
+  }
+
+  .hero-logo-img {
+    width: 220px;
+  }
+
+  /* Areas Grid */
+  .areas-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+
+  /* About Split */
+  .about-split {
+    grid-template-columns: 1fr;
+    gap: var(--space-10);
+  }
+
+  /* Campus highlight */
+  .campus-highlight {
+    grid-template-columns: 1fr;
+    gap: var(--space-10);
+  }
+
+  /* Process Steps */
+  .process-steps {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-8);
+  }
+
+  .process-steps::before {
+    display: none;
+  }
+
+  /* Projects Grid */
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Service Detail */
+  .service-detail-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+    direction: ltr !important;
+  }
+
+  /* Mission Vision */
+  .mission-vision-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Contact page */
+  .contact-page-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+  }
+
+  .footer-grid > *:first-child {
+    grid-column: 1 / -1;
+  }
+
+  /* Form Card */
+  .form-card {
+    padding: var(--space-8) var(--space-6);
+  }
+}
+
+/* ── Mobile Large (480px - 767px) ── */
+@media (max-width: 767px) {
+  :root {
+    --section-py: 3rem;
+  }
+
+  /* Hero */
+  .hero-section {
+    padding: var(--space-12) 0;
+  }
+
+  .hero-logo-img {
+    width: 180px;
+  }
+
+  /* Grids */
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .core-values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .campus-programs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .careers-opportunities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .working-process-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Process Steps */
+  .process-steps {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  /* Projects Grid */
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Tech Stack */
+  .tech-stack-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+  }
+
+  .footer-bottom-links {
+    gap: var(--space-4);
+  }
+
+  /* CTA Section */
+  .cta-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Hero Stats */
+  .hero-stats-strip {
+    gap: var(--space-6);
+  }
+
+  /* Form Card */
+  .form-card {
+    padding: var(--space-6) var(--space-5);
+  }
+}
+
+/* ── Mobile Small (< 480px) ── */
+@media (max-width: 479px) {
+  :root {
+    --section-py: 2.5rem;
+  }
+
+  .hero-section {
+    padding: var(--space-10) 0;
+  }
+
+  .hero-badge {
+    font-size: 11px;
+  }
+
+  .area-card {
+    padding: var(--space-8) var(--space-5);
+  }
+
+  .area-card-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .service-card {
+    padding: var(--space-6) var(--space-5);
+  }
+
+  .program-card {
+    padding: var(--space-5);
+  }
+
+  .tech-stack-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .working-process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-stats-strip {
+    flex-direction: column;
+    gap: var(--space-4);
+    align-items: center;
+  }
+
+  .back-to-top {
+    bottom: var(--space-4);
+    right: var(--space-4);
+    width: 40px;
+    height: 40px;
+  }
+
+  .project-filters {
+    gap: var(--space-1);
+  }
+
+  .filter-btn {
+    font-size: 11px;
+    padding: 6px 14px;
+  }
+
+  .campus-image-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .campus-image-item:first-child {
+    grid-column: 1;
+  }
+
+  .process-steps::before {
+    display: none;
+  }
+
+  .form-card {
+    padding: var(--space-5) var(--space-4);
+  }
+
+  .mission-card,
+  .vision-card {
+    padding: var(--space-6);
+  }
+}
+
+/* ── Print Styles ── */
+@media print {
+  .site-navbar,
+  .announcement-bar,
+  .back-to-top,
+  .hero-section,
+  .cta-section {
+    display: none !important;
+  }
+
+  body {
+    font-size: 12pt;
+    color: #000;
+  }
+}

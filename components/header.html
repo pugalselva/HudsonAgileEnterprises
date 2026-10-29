@@ -1,0 +1,89 @@
+<!-- ============================================================
+  HUDSON AGILE ENTERPRISES — Shared Header Component
+  components/header.html
+
+  Loaded into every page via Components.load('#site-header', 'components/header.html')
+  Requires an HTTP server. See README.md for local development.
+============================================================ -->
+
+<!-- Announcement Bar -->
+<div id="announcement-bar" class="announcement-bar" role="banner">
+  <div class="container">
+    <span class="bi bi-megaphone-fill me-2"></span>
+    <span data-announcement-text>We are now accepting campus collaboration enquiries for the upcoming academic year.</span>
+    &nbsp;
+    <a href="campus-programs.html" data-announcement-link class="fw-semibold">Learn More &rarr;</a>
+  </div>
+</div>
+
+<!-- Primary Navigation -->
+<nav class="site-navbar" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <div class="navbar-inner">
+
+      <!-- Brand -->
+      <a href="index.html" class="navbar-brand-link" aria-label="Hudson Agile Enterprises — Home">
+        <img
+          src="assets/images/branding/logo.png"
+          alt="Hudson Agile Enterprises logo — golden bridge"
+          class="navbar-logo"
+          width="52"
+          height="44"
+        />
+        <div class="navbar-brand-text">
+          <span class="navbar-brand-name">HUDSON AGILE</span>
+          <span class="navbar-brand-tagline">Enterprises</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <ul class="navbar-nav-links" role="list" aria-label="Main menu">
+        <li><a href="index.html"           class="nav-link-item">Home</a></li>
+        <li><a href="about.html"           class="nav-link-item">About</a></li>
+        <li><a href="services.html"        class="nav-link-item">Services</a></li>
+        <li><a href="campus-programs.html" class="nav-link-item">Campus Programs</a></li>
+        <li><a href="projects.html"        class="nav-link-item">Projects</a></li>
+        <li><a href="careers.html"         class="nav-link-item">Careers</a></li>
+        <li><a href="contact.html"         class="nav-link-item">Contact</a></li>
+      </ul>
+
+      <!-- Desktop CTA + Mobile Toggle -->
+      <div class="navbar-actions">
+        <a href="contact.html?enquiry=project" class="btn-discuss" aria-label="Discuss your project with Hudson Agile">
+          <i class="bi bi-chat-dots"></i>
+          Discuss a Project
+        </a>
+
+        <button
+          class="navbar-toggler-btn"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+
+    </div><!-- /.navbar-inner -->
+  </div><!-- /.container -->
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobile-nav" class="mobile-nav-drawer" role="navigation" aria-label="Mobile menu">
+    <div class="container">
+      <a href="index.html"           class="mobile-nav-link">Home</a>
+      <a href="about.html"           class="mobile-nav-link">About</a>
+      <a href="services.html"        class="mobile-nav-link">Services</a>
+      <a href="campus-programs.html" class="mobile-nav-link">Campus Programs</a>
+      <a href="projects.html"        class="mobile-nav-link">Projects</a>
+      <a href="careers.html"         class="mobile-nav-link">Careers</a>
+      <a href="contact.html"         class="mobile-nav-link">Contact</a>
+      <div class="mobile-nav-divider"></div>
+      <div class="mobile-nav-cta">
+        <a href="contact.html?enquiry=project" class="btn-hudson btn-primary-blue w-100 justify-content-center">
+          <i class="bi bi-chat-dots"></i> Discuss a Project
+        </a>
+      </div>
+    </div>
+  </div><!-- /.mobile-nav-drawer -->
+
+</nav><!-- /.site-navbar -->
